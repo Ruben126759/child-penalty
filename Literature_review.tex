@@ -1,0 +1,149 @@
+\documentclass[10pt]{article}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{palatino}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{breakcites}
+\usepackage{natbib}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\linespread{1.2}
+
+\sectionfont{\fontsize{15}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+
+
+
+	\addtolength{\oddsidemargin}{-.375in}
+	\addtolength{\evensidemargin}{-.375in}
+	\addtolength{\textwidth}{0.75in}
+
+	\addtolength{\topmargin}{-.375in}
+	\addtolength{\textheight}{0.75in}
+\begin{document}
+
+
+\title{The Child Penalty}
+\author{Ruben van den Akker (2073611)}
+\date{\today}
+\maketitle
+
+ \section{Gender Pay Gap}
+In the past 50 years, the gender pay gap has declined significantly (\cite{blau2017gender}; \cite{goldin2014grand}). The composition of the gender wage gap also has changed in this period. Historically, the gender pay gap exhibited pronounced disparities at the lower end of the wage distribution, with women predominantly concentrated in low-wage occupations. Over time, improvements in educational attainment and increased representation of women in the workforce have led to a narrowing, but not closing, of the gap at the bottom and middle. At the top of the wage distribution, including executive positions, progress has been slower, with women still underrepresented in leadership roles. Currently, the median salary for women in the US working full-time is about 83\% of that of the men's median salary, not adjusted for any other covariates.
+
+\cite{blau2017gender} put forward numerous explanations for the persisting gender gap. The largest contributors to the current gender pay gap are industry and occupation. These factors together account for about 50\% of the total gap observed. Women are more likely to hold administrative support jobs or work in the service industry. Teachers and nurses are also predominantly female. Men on the other hand hold most of the managerial and blue-collar work jobs. Although these disparities have also been narrowing, asymmetric wage growth across these occupations and industries have offset any effect on the overall gender wage gap. Note that occupational sorting may be influenced by other factors, most notably discrimination. If employers are systematically less likely to hire women in managerial jobs, then a large part of this effect would be captures by occupation effects in the study by \cite{blau2017gender}.
+
+After controlling for occupation and industry dummies, still a 9 percentage point gap in earnings remains, called the 'unexplained earnings gap'. Explanations that have been offered in the literature for this gap that seem to have some salience are gender norms and non-cognitive skills. Men are, on average, more competitive, less risk-averse, and more likely to negotiate with their employer as compared to women. The effect of gender norms is also interesting and perhaps counterintuitive. In couples where the wife is likely to outearn the husband, the wife works fewer hours, spending more hours on domestic work, and accepts jobs well below her estimated potential income.
+
+A final non-negligible factor when studying differences in earnings between men and women is the motherhood penalty. \cite{bertrand2010dynamics} find that men and women have similar incomes after completing an MBA, but that the men gain a substantial advantage within the first decade after graduation. Two of the main reasons for that are more and longer interruptions to employment for women and women working fewer hours, both very much tied to the arrival children. In another paper, \cite{goldin2016most} finds that the gender gap in earnings is largest to professions with non-linear returns to hours. Examples are lawyers and investment bankers, where working long hours is highly rewarded, as compared to pharmacists, where earnings are more or less linear in hours. Since mothers generally work fewer hours following childbirth, they miss out on the high wages in banking and law firms even if they held a job there.
+
+\section{Child Penalty}
+A recent strand of literature, starting with \cite{kleven2019children} using Danish data, zoomed in on  the earnings of parents in the years around childbirth. They find a strong and persistent drop in annual earnings of about 20\% the years following childbirth for mothers, whilst absolutely no effect for fathers (figure \ref{fig:cpden}). They call this the child penalty in earnings (for mothers). This drop in annual earnings seems to stem roughly equally from a fraction of mothers that exit the labor force, reduce their working hours, and a reduction in the wages of mothers. Through an Oaxaca-Blinder decomposition they show that child-related inequality explains 80\% of the remaining gender inequality in earnings in Denmark.
+
+\begin{figure}
+    \centering
+    \includegraphics{ChildPenDenmark.PNG}
+    \caption{Main figure from \cite{kleven2019children} for Denmark}
+    \label{fig:cpden}
+\end{figure}
+
+\cite{andresen2022causes} formulate five potential causes of the child penalty. The first reason is biology. Giving birth is a shock to the mother's health and has short-term and in some instances long-term effects. A second rationale is comparative advantage. At least one of the parents has to take care of the child and perhaps the mother has a lower wage than the father, it would then make sense for the household if the father keeps working. A related reason is preferences, perhaps women enjoy spending time with children more than men. Fourth, societal norms may dictate that it is the mother who should take care of the child and quit working full-time. Couples may adopt these norms as the default when starting a family. Finally, of course, employer discrimination against mothers may play a role.
+
+Research following up on \cite{kleven2019children} has either tried to find evidence (dis)proving either of the previous theories, to inspect whether the results generalize to other geographical contexts, or both. \cite{andresen2022causes} investigate the biology hypothesis. Using Norwegian administrative data they compare heterosexual couples with biological and adoptive children and same-sex female couples with biological children. If biology was the main driver of the child penalty, the child penalty should be strongly reduced for adoptive parents as the mother does not give birth. Instead, the child penalty for heterosexual couples, both adopting and with own children, is large and not significantly different between. Same-sex female couples, however, face much smaller child penalties for the birth mother that seem to dissipate over time, pointing to other channels, such as preferences or gender norms. \cite{kleven2021does} also find no difference between biological and adoptive parents in the child penalty using Danish administrative data.
+
+The second channel for the child penalty has been tested as well. \cite{cortes2020children} differentiate between husbands that are more educated, have the same education, or less educated than their spouses. Using PSID data they find only a limited role for comparative advantage in the child penalty. Mothers in all groups experience a large and immediate drop in earnings following childbirth, whilst men face almost no changes. The child penalty does seem the most pronounced for women that are less educated than their husbands, and somewhat smaller for the other groups, but this difference is at most 10 percentage points. \cite{artmann2022household} find stronger results in the Netherlands using administrative data. The child penalty for mothers is about twice as large for couples where only the husband has some college (50\%) as compared to couples where both spouses have a master's degree or the mother has a master's degree and the husband a bachelor's degree (20-30\%). Also when considering quartiles of pre-child relative income between the husband and the wife, the magnitude of the child penalty decreases with higher relative income for the mother to be, with estimates ranging from 20\% to 40\%. Comparative advantage thus seems to play some role for the magnitude of the child penalty for mothers, but cannot really explain the negligible effect on the earnings of fathers.
+
+Disentangling the other three channels is more challenging. Nevertheless, many papers find strong correlation between gender norms and the size of the child penalty. \cite{kleven2023child} estimates the child penalty in the United States per state and finds that child penalties are higher in states that score low on a self-constructed progressivity index. Mothers in Utah, for instance, fave a child penalty in earnings of 61\%, whilst mothers in Vermont face a much lower penalty of 21\%. Moreover, individuals that migrate mirror their home state or native country in the child penalty and only slowly adjust to the new state's norms over generations. \cite{kleven2019child} find similar results when comparing the child penalties from six countries: Denmark, Sweden, Germany, Austria, United Kingdom, and United States. The magnitude of the child penalties for these countries correlates strongly with the fraction of individuals in the respective country agreeing with the statement "Women with children under school age or in school should stay at home".
+
+\cite{rabate2022determines} investigate the social norms channel in the Dutch context. First, they establish that the child penalty in annual earnings for mothers is 46\%. Figure \ref{fig:cpned} shows that the main channel in the Netherlands is on the intensive margin, i.e. mothers reduce their number of working hours. To study the effect of social norms, they consider religiosity measured as going to church at least once a month. As a sort of first-stage, they establish that the churchgoing group holds less egalitarian views on the division of childrearing and other domestic work between the mother and the father. They find that a 10 percentage point increase in the share of religious people increases the child penalty by 4.3 percentage points. In general, there is a lot of suggestive evidence that non-egalitarian gender norms exacerbate the child penalty.
+
+An indirectly related question is the effect of family policies on the child penalty. In the previous decades, many OECD countries have expanded their parental leave and childcare policies. \cite{kleven2020family} find a slightly increased child penalty in the short run for Austrian mothers with longer maternity leave. This increase is, however, fully concentrated in the leave period and the long-run penalty does not differ with the length of the leave. They also find a precisely estimated effect of 0 for the expansion of childcare in Austria. This suggests that family policies are not effective at alleviating the child penalty.
+
+A final important contribution to the literature on the child penalty is the child penalty atlas \citep{kleven2023child}. This paper studies the child penalty in labor force participation in 134 countries. They find that child penalties greatly differ with different stages of economic development. Child penalties are very close to zero in the poorest countries, whilst in more developed countries they are the major driver of gender inequality. Only at the highest levels of development there is some evidence of a decreasing child penalty again, creating a weak inverse U-shape. \cite{kleven2023child} also find evidence for a marriage penalty. In particular in less-developed countries, female employment falls directly after marriage. This marriage penalty in employment disappears for higher levels of development.
+
+\begin{figure}
+    \centering
+    \includegraphics{ChildPenNetherlands.PNG}
+    \caption{Baseline figure describing the child penalty in the Netherlands from \cite{rabate2022determines}}
+    \label{fig:cpned}
+\end{figure}
+
+\section{Methodologies}
+
+\subsection{Event Study Approach}
+Following \cite{kleven2019children}, the literature generally estimates the following specification on the sample of parents:
+
+\begin{equation}
+\label{eq: child pen}
+    Y^g_{ist} = \sum_{j \neq -1} \alpha_j^g \cdot 1\{j=t\} + \sum_k \beta^g_k \cdot 1\{k=age_{is}\} + \sum_y \gamma^g_y \cdot 1\{y=s\} + \nu^g_{ist}.
+\end{equation}
+
+In this equation, $ Y^g_{ist}$ denotes the outcome, typically annual labor earnings, for individual $i$ of gender $g$ in year $s$ and at event time (years relative to the birth of the first child) $t$. The coefficient of interest is thus $\alpha$ from $t=0$ onwards, before child birth no effect should be visible. The $\alpha$ estimates the relative difference in earnings for men and women in the years after childbirth in levels, this enables the researcher to also preserve the individuals who drop out of the labor force or become unemployed in the sample. The other terms control non-parametrically for age and year effects. The estimation is run separately for men and women. The child penalty is then defined as
+
+\begin{equation}
+    P_t = \frac{\hat{\alpha}_t^m-\hat{\alpha}_t^w}{E[\Tilde{Y}^w_{ist}|t]}.
+\end{equation}
+
+This expression finds the relative difference of the event time dummies at each $t$ and scales them by $E[\Tilde{Y}^w_{ist}|t]$, the predicted income of the woman at time $t$ in the absence of childbirth (i.e. with the contribution of the $\alpha$'s in equation \ref{eq: child pen} set to 0). In other words, this describes how much the earnings of women fall relative to men's earnings at each event time $t$.
+
+\subsection{Pseudo-Event Study Approach}
+A recent extension to the methodology described above is the pseudo-event study approach as developed by \cite{kleven2022geography}. Without high quality panel data, estimation of equation \ref{eq: child pen} becomes problematic as it requires observations of parents in a wide window around the birth of their first child. To relax this data requirement, \cite{kleven2022geography} develops a method to create a pseudo-panel from cross-sectional data.
+
+For individuals with children, the age of the oldest child pins down the event time $t$. For childless families, i.e. those in event time $t < 0$ this is more complicated, as the data does not contain information on when they will receive their first child. The solution is to match each parent $i$, in year $y$, with age $a$ and characteristics $X_i$ observed at time 0 to a childless individual $j$ in year $y-n$, at age $a-n$, and characteristics $x_i=X_j$. The set of matching variables chosen by \cite{kleven2022geography} are gender, education, race, marital status, and state of residence. Repeating this matching procedure for $n=1,...,5$ results in a panel with 5 years of pre-birth data. Combined with the post-birth observations already present in the cross-sectional data, it is now possible to estimate eq. \ref{eq: child pen} on the pseudo-panel.
+
+The main identification challenge to this approach is the potential selection into parenthood. \cite{kleven2022geography} show that fathers generally have higher employment rates and earnings than childless men. For women, the figures are more similar between the two groups, even though it has been shown that mothers are significantly pulled down by the child penalty and therefore should have exhibited poorer labor market outcomes in the absence of selection. They examine this issue in two ways. Firstly, they verify the approach using PSID data, which contains panel data. The results from estimating eq. \ref{eq: child pen} on the panel data and the pseudo-panel created from the data align very closely. A second verification exercise is to consider the effect of childbirth on fathers. If selection was an issue, then the childbirth should have an artificial positive effect on the earnings of fathers, instead of the zero effect generally observed. \cite{kleven2019children} finds little to no evidence of this.
+
+\subsection{Effect of Family Policies on the Child Penalty}
+The specification in eq. \ref{eq: child pen} can also be modified to estimate the effect of certain family policies on the child penalty. \cite{kleven2020family} study the effect of the introduction of paid maternity leave in Austria in 1961. They estimate the following equation:
+
+\begin{equation}
+     Y_{ist} = \sum_{j} \alpha_j \cdot 1\{j=t\} + \sum_{j} \alpha_j^T \cdot 1\{j=t\} \cdot T_i +  \sum_k \beta^g_k \cdot 1\{k=age_{is}\} + \sum_y \gamma^g_y \cdot 1\{y=s\} + \nu^g_{ist}.
+\end{equation}
+
+The regression equation is different in two ways from the standard specification. First, the interaction terms between event time dummies and the binary treatment indicator $T_i$. The estimate on this set of parameters thus shows the difference in the impact of childbirth on the level of earnings for those eligible for the reform compared to those who are not eligible. Second, the analysis here is only run on the sample of women. The estimates on $\alpha_j^T$ into a percentage-point effect on the child penalty using
+
+\begin{equation}
+    \Delta P_t = \frac{\hat{\alpha}_j^T}{E[\Tilde{Y}^w_{ist}|t]}.
+\end{equation}
+
+\section{Potential Questions for Research}
+
+\subsection{Part-time Penalty}
+Considering figure \ref{fig:cpned}, it seems that the decision for new mothers to work fewer hours is the main contributor to the drop in earnings. This begs the question whether we are perhaps looking at a part-time work penalty, acknowledging, of course, that the decision to start working part-time is induced by childbirth. If the underlying mechanism is a part-time work penalty, a few hypotheses can be formed:
+
+\begin{enumerate}
+    \item H1a: Mothers who continue working full-time after childbirth face no child penalty.
+    \item H1b: Mothers who switch from working full-time to part-time after childbirth face a large child penalty.
+    \item H1c: Non-mothers who switch form working full-time to part-time face a similar drop in earnings.
+\end{enumerate}
+
+There are some threats to identification for the hypothesis that need to be addressed. The sample of mothers that continues working full-time after childbirth (H1a) may be a selected sample of women with high labor market potential. Perhaps matching them to women who do switch to part-time on some key observables is enough to address this threat.
+
+Secondly, employers may wrongly assume that women in childbearing ages that switch to part-time do so in anticipation of a child, even if the woman is not planning on having children (H1c). Then the drop in earnings that we attribute to the part-time penalty, may instead still reflect the child penalty. A natural solution would be to look at the sample of women from 40 years onwards, after which fertility is very low. This, however, may also be problematic as switching to part-time early in a woman's career may have different implications than switching to part-time after already accumulating more (full-time) experience.
+
+\subsection{Differences by industry and occupation}
+A second interesting angle is to examine whether the the child penalty differs by industry or occupation. \cite{goldin2016most} find that the gender earnings gap, and the part-time penalty, is very small in the pharmaceutical industry. They argue that this is due to the increasing substitutability between pharmacists and (related) a quite linear return to hours. This is as opposed to, for instance, lawyers and investment bankers who face steep increases in hourly renumeration for high levels o hours (40 or more per week). The gender gap in those professions is much larger as women who switch to part-time do not only lose earnings in proportion to their reduction of hours, but also face a decrease in their hourly wage. Some descriptive evidence for this is found in \cite{artmann2022household}. When looking at field of study, the child penalty is smallest for those studying medicine, dentistry, or pharmacy, whilst for those studying business, economics, and law, the penalty is relatively high.
+
+This leads to a second set of hypotheses:
+\begin{enumerate}
+    \item H2: For occupations / industries with higher substitutability of employees and a more linear return to hours, the child penalty is lower.
+    \item H2a: In those occupations / industries, women are less likely do drop out of the labor force.
+    \item H2b: In those occupations / industries, the reduction in hours conditional on working is similar to other occupations / industries.
+    \item H2c: In those occupations / industries, there is no child penalty on wages, whilst in other occupations / industries there is.
+\end{enumerate}
+
+The main challenge for testing these hypotheses are developing an index of substitutability. Of course, it is always possible to plot the child penalty for each industry / occupation, or a relevant subset of those, to see if the effect seems to be there before proceeding. Besides that, the returns to hours can be estimated and can be used as a proxy for substitutability.
+
+Moreover, women switching between occupations / industries after childbirth may obscure the true effect. If, for instance, new mothers are likely to switch to those more egalitarian jobs it could have several effects. If it is only the high-potential mothers that stay in their jobs, we would underestimate the effect of occupation / industry. If, however, the high-potential mothers decide to switch because they are hit in particular by the wage reductions upon reducing their hours, we would attribute that effect to the occupation / industry. A robustness check can be done where we only consider that job stayers.
+
+\newpage
+\bibliography{references}
+\bibliographystyle{apalike}
+
+\end{document}
